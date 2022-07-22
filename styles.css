@@ -15,6 +15,10 @@ header{
 
 }
 
+#hamnav label, #hamburguer{
+    display: none;
+}
+
 .nav-link{
     padding: 15px;
     background:rgb(65, 110, 177);
@@ -157,6 +161,86 @@ h2{
 }
 
 .nws-ltr{
-    margin: 10px 100px 10px 100px;
+    margin: 10px 100px;
     color: rgb(188, 255, 233);
+}
+
+@media only screen and (max-width: 700px){
+    .nav-link ul{
+        display: block;
+    }
+/* hamburguer menu */
+    .nav-link a{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #hamnav label{
+        display: inline-block;
+        color: rgb(144, 251, 255);
+        background-color: #0a2341;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .nav-link{
+        display: none;
+    }
+
+    #hamnav input:checked ~ .nav-link{
+        display: block;
+        border-radius: 20px;
+        margin: 10px;
+
+
+    }
+
+
+    .placeholder-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .placeholder-img img{
+        width: 110%;
+        height: 110%;
+    }
+    header{
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .placeholder-img h1{
+        margin: 10px -100px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #bg{
+        margin: 20px;
+        padding: 0 85px;  
+    }
+
+    .lan-img-1{
+        width: 100%;
+        height:100%;
+      }
+      
+      footer h2{
+        margin: 10px;
+        text-align: center;
+      }
+
+      .testimonies{
+        margin: 10px -30px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+    
 }
